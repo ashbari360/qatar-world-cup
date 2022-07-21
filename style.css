@@ -1,0 +1,344 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* body style */
+body{
+    font-family: Poppins;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+h4{
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+/* Banner styles */
+.banner{
+    height: 646px;
+    width: 1321px;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.banner-text{
+    width: 531px;
+    height: 424px;
+    margin-right: 12px;
+}
+.banner-header{
+    font-weight: bold;
+    font-size: 70px;
+    color: white;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+.banner-p{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+}
+.watch-now{
+    background-color: yellow;
+    border: none;
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 7px;
+}
+.watch-now input{
+    background-color:transparent;
+    border: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.banner-image img{
+    width: 581px;
+    height: 613px;
+    margin-left: 12px;
+    margin-top: 36px;
+}
+
+/* Navigation Style */
+nav{
+    height: 312px;
+    width: 312px;
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+nav input{
+    background-color: white;
+    color: #161616;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: auto;
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+    margin: 15px;
+}
+nav input:hover{
+    background-color: yellow;
+}
+
+
+/* Blog Post Style  */
+
+.blog-post{
+    height: 362px;
+    width: 312px;
+    border: 1px solid #16161644 ;
+    border-radius: 10px;
+    margin: auto;
+}
+.blog-details{
+    margin: auto;
+    padding: 0 20px;
+    
+}
+.blog-details h4{
+    border: 1px solid #1616169c;
+    width: 100px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 3px;
+    
+}
+.blog-details h2{
+    font-size: 18px;
+    margin-top: -7px;
+}
+.blog-details i{
+    font-size: 16px;
+    
+}
+.blog-details strong{
+    margin-right: 20px;
+}
+
+/* blog section styling */
+
+.blog-section{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+    max-width: 980px;
+}
+main{
+    display: flex;
+    margin-top: 130px;
+    justify-content: center;
+}
+
+/* Footer Section Styling */
+
+footer{
+    width: 100%;
+    height: 444px;
+    background-color: #161616;
+    margin-top: 130px;
+    display: flex;
+    
+    
+}
+.footer-info{
+    justify-content: center;
+    max-width: 1320px;
+    align-items: center;
+    margin: 45px auto;
+    
+}
+footer h2{
+    color: white;
+    text-align: center;
+    padding-left: 30px;
+}
+footer ul{
+    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+footer li{
+    margin: 30px;
+    color: white;
+    font-size: 16px;
+}
+footer i{
+    font-size: 30px;
+    color: white;
+    margin: -10px;
+}
+hr{
+    margin: 20px auto;
+    
+}
+
+/* Upcoming Match Page Styling */
+.match{
+    text-align: center;
+    width: 312px;
+    height: 242px;
+    border-radius: 10px;
+    border: 1px solid #16161621;
+    align-items: center;
+}
+.match h2{
+    font-size: 20px;
+}
+.match span{
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.match img{
+    margin: 12px;
+}
+
+
+/* Responsive Styles */
+
+
+/* Tablet Screen */
+
+@media only screen and (max-width: 834px) and (min-width:600px)
+{
+    main{
+        display: block;
+        margin-top: -10px;
+    }
+    nav{
+        margin: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav input{
+        background-color: white;
+        color: #161616;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: auto;
+        height: 64px;
+        border-radius: 10px;
+        margin: 15px;   
+    }
+    .blog-section{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        column-gap: 12px;
+        row-gap: 12px;
+    }
+    .banner{
+        width: 100%;
+        height: 646px;
+        background-color: #161616;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+    }
+    .banner-text{
+        margin-left: 20px;
+    }
+    .banner-header{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .banner-p{
+        font-size: 16px;
+    }
+    .banner-image img{
+        width: 431px;
+        height: 463px;
+        margin-left: 12px;
+        margin-top: 190px;
+    }
+    
+}
+button{
+    visibility:visible;
+}
+
+/* Mobile Screen  */
+
+@media only screen and (max-width:600px)
+{
+    main{
+        display: block;
+        margin-top: -10px;
+    }
+    .blog-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 12px;
+        row-gap: 12px;
+    }
+    nav{
+        margin: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner{
+        width: 100%;
+        height: 646px;
+        background-color: #161616;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        
+    }
+    .banner-text{
+        margin: auto;
+        padding: 20px;
+        align-content: center;
+        width: 90%;
+    }
+    .banner-image img{
+        width: 306px;
+        height: 338px;
+        margin-left: 12px;
+        margin: auto;
+        
+    }
+    .banner-header{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .banner-p{
+        font-size: 16px;
+    }
+    footer{
+        height: auto;
+        
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+
